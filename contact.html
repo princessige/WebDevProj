@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Princess | Princess' Portfolio</title>
+
+
+
+
+<style>
+
+h1 { 
+
+	text-align: center;
+	font-family: Trebuchet MS;
+	color: #cf9fff;
+}
+
+h3 {
+
+	text-align: center;
+	font-family: Trebuchet MS;
+
+}
+
+ul {
+	font-family: Helvetica;
+	list-style-position: inside;
+}
+
+body {
+	background-color: #ffeff1;
+
+}
+p {
+	font-family: Helvetica;
+	text-align: center;
+	font-size: 24 px;
+}
+
+
+
+</style>   
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <ul>
+
+                <br><br> <center><li><a href="index.html">Home</a></li></center>
+
+                <br> <center><li><a href="about.html">About</a></li></center>
+
+                <br> <center><li><a href="contact.html">Contact</a></li></center> <br>
+
+            </ul>
+
+        </nav>
+<hr>
+<hr>
+    </header>
+
+
+
+
+
+
+
+
+<script>
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+   
+	var name = document.getElementById('name').value;
+
+	var email = document.getElementById('email').value;
+
+	var message = document.getElementById('message').value;
+    
+    if (!name || !email || !message) {
+
+        alert('Please fill out all fields.');
+
+        event.preventDefault();    //this prevents no input
+    }
+});
+
+</script>
+
+
+<main>
+
+    <section class="contact">
+<h3>If you have any questions, comments, or anything to say at all about my portfolio, please let me know. Don't forget to enter your name and email for your message!</h3>
+
+        <form id="contactForm">
+
+           <center> <label for="name">Name</label>
+
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button></center>
+
+        </form>
+
+    </section>
+
+</main>
+
