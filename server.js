@@ -11,6 +11,9 @@ const name = req.body.name;
 const email = req.body.email
 const message = req.body.message
     
+    console.log(`Received submission from: ${name}, ${email}, saying: ${message}`);
+    
+    
 res.send(`Thanks for your message!`);
 });
 app.listen(port, () => {
