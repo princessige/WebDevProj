@@ -6,7 +6,7 @@ www-form-urlencoded
 app.get('/', (req, res) => {
 res.sendFile(__dirname + '/contact.html');
 });
-app.post('/contact', (req, res) => {
+app.post('/contactForm', (req, res) => {
 const name = req.body.name;
 const email = req.body.email
 const message = req.body.message
